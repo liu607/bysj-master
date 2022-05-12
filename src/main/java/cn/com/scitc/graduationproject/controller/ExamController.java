@@ -91,7 +91,7 @@ public class ExamController {
             stuAnsArr =request.getParameterValues(String.valueOf(paper.getSid()));//获取每道题的答案
             //如果是多选题，存在多个选项值，因此需要getParameterValues方法获取多个值
             if (stuAnsArr != null) {
-                String studentkeys = ""; //每道题的答案
+                String studentkeys = ""; //每道题的答案。
                 for (int j = 0; j < stuAnsArr.length; j++) {//多选题拥有多个答案
                     studentkeys += stuAnsArr[j];//组装学生答案
                 }
